@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>我的GitHub</h1>
+<p>
+    你一定对我的<a href="https://www.github.com/kyv001">GitHub主页</a>很感兴趣吧<br />
+    一个小学生的GitHub，会有什么呢？让我一个一个介绍。<br />
+    一键跳转：
+</p>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        我的GitHub项目
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#notebookonweb">notebook on web</a></li>
+        <li><a href="#gameoflife">game of life</a></li>
+        <li><a href="#videodownloader">bilibili video downloader</a></li>
+    </ul>
+</div>
+
+<!-- ------------------------------------------ -->
+<a name="notebookonweb"></a>
+<h2><a href="https://github.com/kyv001/notebookOnWeb">notebook on web</a></h2>
+<img src="../static/images/notebookonweb.png" />
+<p>
+    一个“线上笔记本”，是我做网站的第一次尝试
+</p>
+<!-- ------------------------------------------ -->
+<a name="gameoflife"></a>
+<h2><a href="https://github.com/kyv001/game-of-life">game of life</a></h2>
+<img src="../static/images/gameoflife.png" />
+<p>
+    “生命游戏”——元胞自动机的一种，用几条规则展示出美丽的世界
+</p>
+<!-- ------------------------------------------ -->
+<a name="videodownloader"></a>
+<h2><a href="https://github.com/kyv001/bilibili-video-downloader">bilibili video downloader</a></h2>
+<img src="../static/images/videodownloader.png" />
+<p>
+    B站视频下载器：tkinter与requests的结合，只要有av号，想爬就爬。
+</p>
+{% endblock %}
